@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 const options = {
     params: {
         datePosted: 'week',
@@ -7,7 +10,7 @@ const options = {
         location: 'india'
     },
     headers:{
-        'x-rapidapi-key': '8e75f4dad9msh9711e77c03b355ep1cb0f5jsna23155497928',
+        'x-rapidapi-key': process.env.rapidapi,
         'x-rapidapi-host': 'jobs-api14.p.rapidapi.com'
     }
 };
