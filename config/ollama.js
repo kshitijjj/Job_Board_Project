@@ -10,7 +10,7 @@ const data={
 
 const options={
     headers:{
-        Authorization:'Bearer ' +"249a68fd23b547c18c9883b542bd522c.AyDoEJdhhSeKt3yV6Ns2TkEK",
+        Authorization:'Bearer ' + process.env.ollama_api_key,
         'Content-Type':'application/json'
     }
 }
